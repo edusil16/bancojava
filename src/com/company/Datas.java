@@ -8,17 +8,8 @@ public class Datas {
 
     private final SimpleDateFormat FORMATO_DATA = new SimpleDateFormat("EEEE, d' de 'MMMM' de 'yyyy HH:mm:ss");
     private final SimpleDateFormat DATA = new SimpleDateFormat("dd/MM/yyyy");
-    public Integer dia=16;
-    public Integer mes=06;
-    public Integer ano=1994;
 
-    public Datas() {
-
-    }
-
-    public String converterData(Integer dia, Integer mes, Integer ano){
-        return DATA.format(new Date("1994"+"06"+"16"));
-    }
+    public Datas() {}
 
     public String dataAtual() {
         return DATA.format(new Date());
@@ -51,7 +42,6 @@ public class Datas {
 
         private static final Datas INSTANCE = new Datas();
     }
-
 
     public java.sql.Date getCurrentDate() {
         java.util.Date today = new java.util.Date();
